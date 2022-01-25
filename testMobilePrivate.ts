@@ -14,8 +14,16 @@ mobile1.setCameraNumber(4);
 console.log(mobile1);
 
 let arrMobile = [mobile1,mobile2,mobile3];
+console.log("|-------------|impresiones de movil|--------------|");
 
-for(let val in arrMobile)
-{
-console.log(arrMobile[val].printAll());
-}
+mobile1.printAll();
+console.log("|-------------|impresiones de movil del array|--------------|");
+for (let val of arrMobile)
+        {
+            console.log("the characteristics of the mobile " + val.getName() +
+            " are: \n" + "Name: " + val.getName() + " \n" + " Model: " + val.getModel() + " \n" + " Trademark: " +
+            val.getTrademark() + " \n" + "SD Size (GB): " + val.getSdSize() + " \n"+ " Color: " + val.getColor() +
+            " \n" +" Is 5g? " + val.getIs5G() + " \n" + " Number of Cameras: " + val.getCameraNumber())
+        }
+
+

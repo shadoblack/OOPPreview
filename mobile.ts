@@ -45,8 +45,16 @@ export class Mobile
     public getPrice():number { return this.price};
     public setPrice(price:number):void {this.price = price};
 
-    public printAll():string {return "the characteristics of the mobile " + this.name +
-    " are: \n" + "Name: " + this.name + " \n" + " Model: " + this.model + " \n" + " Trademark: " +
-    this.trademark + " \n" + "SD Size (GB): " + this.sdSize + " \n"+ " Color: " + this.color +
-    " \n" +" Is 5g? " + this.is5G + " \n" + " Number of Cameras: " + this.cameraNumber};
+    public printAll(movilIn:void):string
+    {
+        for (let val in Mobile);
+        {
+            console.log("the characteristics of the mobile " + this.name +
+            " are: \n" + "Name: " + this.name + " \n" + " Model: " + this.model + " \n" + " Trademark: " +
+            this.trademark + " \n" + "SD Size (GB): " + this.sdSize + " \n"+ " Color: " + this.color +
+            " \n" +" Is 5g? " + this.is5G + " \n" + " Number of Cameras: " + this.cameraNumber);
+        }
+        return;
+    }
+    
 }

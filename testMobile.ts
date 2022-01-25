@@ -8,8 +8,8 @@ console.log(mobile1);
 console.log(mobile2);
 console.log(mobile3);
 
-mobile1.is5G=true;
-mobile1.cameraNumber=4;
-
+mobile1.setIs5G(true)
+mobile1.setCameraNumber(4);
+console.log("|-------------|valores de movil 1 cambiado|--------------|")
 console.log(mobile1);
 
